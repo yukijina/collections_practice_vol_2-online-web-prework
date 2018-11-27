@@ -27,6 +27,7 @@ end
 
 
 def count_elements(array)
+  binding.pry
   array.uniq.each do|arr|
     count = 0
     array.each do|arr2| 
