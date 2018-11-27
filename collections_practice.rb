@@ -27,7 +27,7 @@ end
 
 
 def count_elements(array)
-  binding.pry
+  
   array.uniq.each do|hash|
     count = 0
     array.each do|hash2| 
@@ -37,6 +37,7 @@ def count_elements(array)
     end
     hash[:count] = count
   end
+  binding.pry
 end
 
 def merge_data
