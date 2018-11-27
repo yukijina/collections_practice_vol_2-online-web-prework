@@ -28,14 +28,14 @@ end
 
 def count_elements(array)
   binding.pry
-  array.uniq.each do|arr|
+  array.uniq.each do|hash|
     count = 0
     array.each do|arr2| 
-      if arr2 == arr 
+      if arr2 == hash
        count += 1 
       end   
     end
-    arr[:count] = count
+    hash[:count] = count
   end
 end
 
